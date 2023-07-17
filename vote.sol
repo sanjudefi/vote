@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract ClassLeaderElection {
+contract LeaderElection {
     struct Candidate {
         uint256 voteCount;
         bool exists;
@@ -10,7 +10,7 @@ contract ClassLeaderElection {
     mapping(address => Candidate) public candidates;
     address[] public candidateAddresses;
     bool public electionEnded;
-    address public classLeader;
+    address public electedLeader;
 
     event Vote(address indexed candidate, address indexed voter);
 
@@ -48,6 +48,6 @@ contract ClassLeaderElection {
             }
         }
 
-        classLeader = winningCandidate;
+        electedLeader = winningCandidate;
     }
 }
