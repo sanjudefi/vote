@@ -1,4 +1,4 @@
-Class Leader Election Smart Contract
+ Election Smart Contract
 
 The Class Leader Election Smart Contract is a decentralized application (DApp) that allows participants to vote for candidates in a class and determine the class leader based on the votes received.
 
